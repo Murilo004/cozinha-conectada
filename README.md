@@ -32,7 +32,6 @@ C# / .NET 10 · ASP.NET Core · Entity Framework Core · SQL Server 2022 · Redi
 ![Fluxo do pedido](docs/img/fluxo.png)
 
 As setas entre as raias são eventos publicados no Redis Streams (o nome do evento está na seta).
-O diagrama pode ser aberto e editado em [bpmn.io](https://demo.bpmn.io) com o arquivo [`docs/fluxo.bpmn`](docs/fluxo.bpmn).
 
 Streams: `pedidos-eventos`, `pagamentos-eventos` e `cozinha-eventos`. Cada serviço lê pelo seu próprio
 *consumer group* e confirma as mensagens com `XACK`.
