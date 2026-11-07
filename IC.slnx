@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/IC.Shared/IC.Shared.csproj" />
+    <Project Path="src/IC.Pedidos/IC.Pedidos.csproj" />
+    <Project Path="src/IC.Pagamentos/IC.Pagamentos.csproj" />
+    <Project Path="src/IC.Cozinha/IC.Cozinha.csproj" />
+  </Folder>
+</Solution>

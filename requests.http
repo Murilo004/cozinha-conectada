@@ -1,0 +1,28 @@
+### Pedido que será APROVADO (valor <= 500) -> vai até "Pronto" depois de ~5s
+POST http://localhost:5001/pedidos
+Content-Type: application/json
+
+{
+  "cliente": "Maria",
+  "descricao": "2x Hambúrguer + 1 refrigerante",
+  "valor": 89.90
+}
+
+### Pedido que será RECUSADO (valor > 500) -> fica "Recusado" e não chega à cozinha
+POST http://localhost:5001/pedidos
+Content-Type: application/json
+
+{
+  "cliente": "João",
+  "descricao": "Banquete",
+  "valor": 800
+}
+
+### Listar pedidos (acompanhe o status mudando)
+GET http://localhost:5001/pedidos
+
+### Listar pagamentos
+GET http://localhost:5002/pagamentos
+
+### Listar itens da cozinha
+GET http://localhost:5003/cozinha
